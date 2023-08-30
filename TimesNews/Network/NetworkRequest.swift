@@ -21,6 +21,7 @@ protocol NetworkRequestProtocol {
     var apiKey: String { get }
     var endPoint: String { get }
 
+    func urlFromString(endpoint: String) throws -> URL
     func fetchData<T: Codable>(url: URL) async throws -> T
     func fetchData<T: Codable>(_ type: T.Type, url: URL, completion: @escaping (Result<T, NetworkRequestError>) -> Void)
 }

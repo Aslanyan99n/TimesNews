@@ -25,31 +25,10 @@ final class TimesNewsUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func test_whenDarkModeButtonTapped() throws {
+        let articlesNavigationBar = app.navigationBars["Articles"]
 
-//        var launchArguments: [AnyHashable] = []
-//
-//        launchArguments.append("-AppleInterfaceStyle")
-
-//        let isDarkMode: Bool = false
-//
-//        let articlesNavigationBar = app.navigationBars["Articles"]
-//
-//        let darkModeButton = articlesNavigationBar.buttons["Brightness Higher"]
-//        darkModeButton.tap()
-//
-//        XCTAssertTrue(articlesNavigationBar.buttons[isDarkMode ? "Brightness Higher" : "Do Not Disturb"].exists)
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+//        XCTAssertTrue(articlesNavigationBar.buttons["Brightness Higher"].exists)
+//        XCTAssertTrue(articlesNavigationBar.buttons["Do Not Disturb"].exists)
     }
 }

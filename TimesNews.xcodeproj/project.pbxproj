@@ -69,6 +69,7 @@
 		CE1127262A9F11310035AA1F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		CE11272D2A9F2A890035AA1F /* RequestEndPointTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestEndPointTest.swift; sourceTree = SOURCE_ROOT; };
 		CE11272F2A9F2C910035AA1F /* NetworkRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestTest.swift; sourceTree = SOURCE_ROOT; };
+		CE1127312A9F58DE0035AA1F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CE78E0872A9D9FC8009803DB /* TimesNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimesNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE78E08A2A9D9FC8009803DB /* TimesNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesNewsApp.swift; sourceTree = "<group>"; };
 		CE78E08C2A9D9FC8009803DB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -181,6 +182,7 @@
 		CE78E07E2A9D9FC8009803DB = {
 			isa = PBXGroup;
 			children = (
+				CE1127312A9F58DE0035AA1F /* README.md */,
 				CE1127172A9EA20B0035AA1F /* TimesNews.xctestplan */,
 				CE78E0892A9D9FC8009803DB /* TimesNews */,
 				CE11270D2A9E96080035AA1F /* TimesNewsUITests */,
@@ -207,7 +209,7 @@
 				CE1127002A9E7B7A0035AA1F /* Sound */,
 				CE1126FD2A9E725A0035AA1F /* Extension */,
 				CE1126FB2A9E42270035AA1F /* Modifier */,
-				CE78E09E2A9DA574009803DB /* Request */,
+				CE78E09E2A9DA574009803DB /* Network */,
 				CE78E09A2A9DA1F8009803DB /* Model */,
 				CE78E09B2A9DA204009803DB /* View */,
 				CE1127252A9F10E60035AA1F /* ViewModel */,
@@ -246,12 +248,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		CE78E09E2A9DA574009803DB /* Request */ = {
+		CE78E09E2A9DA574009803DB /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				CE78E09F2A9DA5AC009803DB /* NetworkRequest.swift */,
 			);
-			path = Request;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		CE78E0A92A9DF6D0009803DB /* SubView */ = {

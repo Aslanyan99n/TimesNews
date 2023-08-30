@@ -30,12 +30,4 @@ final class RequestEndpointTest: XCTestCase {
 
         XCTAssertEqual(expected, endPoint)
     }
-
-    func test_givenEndPoint_checkConvertingToUrl() {
-//        let url = sut.
-
-        let expected = URL(string: "https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?api-key=tFfRxNv6RXaR5lXpVt6TRTCUxGvlGzmD")
-
-//        XCTAssertEqual(expected, url)
-    }
 }
