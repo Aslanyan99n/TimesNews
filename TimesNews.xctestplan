@@ -1,0 +1,36 @@
+{
+  "configurations" : [
+    {
+      "id" : "11826AEC-679A-4B25-83C6-A9B473900F14",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:TimesNews.xcodeproj",
+      "identifier" : "CE78E0862A9D9FC8009803DB",
+      "name" : "TimesNews"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:TimesNews.xcodeproj",
+        "identifier" : "CE11270B2A9E96080035AA1F",
+        "name" : "TimesNewsUITests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TimesNews.xcodeproj",
+        "identifier" : "CE11271B2A9F0C970035AA1F",
+        "name" : "TimesNewsTests"
+      }
+    }
+  ],
+  "version" : 1
+}
