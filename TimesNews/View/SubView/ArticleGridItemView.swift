@@ -15,9 +15,15 @@ struct ArticleGridItemView: View {
     // MARK: - BODY
 
     var body: some View {
-        URLImageView(urlString: article.urlString)
-            .scaledToFit()
-            .cornerRadius(12)
+        AsyncImage(url: URL(string: article.urlString)) { image in
+            image.resizable()
+        } placeholder: {
+            Image(systemName: "photo")
+                .renderingMode(.template)
+                .resizable()
+                .foregroundColor(.gray)
+        }
+        .cornerRadius(12)
     }
 }
 

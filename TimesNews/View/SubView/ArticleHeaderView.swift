@@ -16,16 +16,23 @@ struct ArticleHeaderView: View {
     // MARK: - BODY
 
     var body: some View {
-        URLImageView(urlString: article.urlString)
-            .scaledToFill()
-            .scaleEffect(isAnimating ? 1 : 0)
-            .background(
-                LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
-            )
-            .animation(.easeIn(duration: 1), value: isAnimating)
-            .onAppear {
-                isAnimating = true
-            }
+        AsyncImage(url: URL(string: article.urlString)) { image in
+            image.resizable()
+        } placeholder: {
+            Image(systemName: "photo")
+                .renderingMode(.template)
+                .resizable()
+                .foregroundColor(.gray)
+        }
+        .scaledToFill()
+        .scaleEffect(isAnimating ? 1 : 0)
+        .background(
+            LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
+        )
+        .animation(.easeIn(duration: 1), value: isAnimating)
+        .onAppear {
+            isAnimating = true
+        }
     }
 }
 

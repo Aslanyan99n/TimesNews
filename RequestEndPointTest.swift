@@ -27,7 +27,6 @@ final class RequestEndpointTest: XCTestCase {
         let expected = "https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?api-key=tFfRxNv6RXaR5lXpVt6TRTCUxGvlGzmD"
 
         // Then
-
         XCTAssertEqual(expected, endPoint)
     }
 }

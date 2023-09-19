@@ -16,9 +16,16 @@ struct ArticleRowView: View {
 
     var body: some View {
         HStack(spacing: 10) {
-            URLImageView(urlString: article.urlString)
-                .frame(width: 100, height: 100)
-                .cornerRadius(12)
+            AsyncImage(url: URL(string: article.urlString)) { image in
+                image.resizable()
+            } placeholder: {
+                Image(systemName: "photo")
+                    .renderingMode(.template)
+                    .resizable()
+                    .foregroundColor(.gray)
+            }
+            .frame(width: 100, height: 100)
+            .cornerRadius(12)
 
             VStack(alignment: .leading, spacing: 4) {
                 // TITLE
